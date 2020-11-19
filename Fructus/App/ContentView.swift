@@ -24,7 +24,9 @@ struct ContentView: View {
                         FruitRowView(fruits: item)
                             .padding(.vertical, 4)
                 }
-            } .navigationTitle("Fruits")
+                }
+            }  //: List
+            .navigationTitle("Fruits")
                 .navigationBarItems(trailing:
                                         Button(action: {
                                             isShowingSetting = true
@@ -35,8 +37,7 @@ struct ContentView: View {
                 .sheet(isPresented: $isShowingSetting, content: {
                     SettingSheet()
                 })
-        } //: NavigationView
-    }
+    }                 //: NavigationView
 }
 
     // MARK: - PREVIEW
