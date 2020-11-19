@@ -45,6 +45,22 @@ struct SettingSheet: View {
                     
                     // MARK: - SECTION 3
                     
+                    GroupBox(label:
+                                HStack {
+                                    SettingLabelView(labelText: "Application", labelImage: "apps.iphone")
+                                }  //:  End Of HStack
+                             )
+                            {
+                            SettingRowView(name: "Developer", content: "Vatana Chhorn")
+                            SettingRowView(name: "Designer", content: "Vatana Chhorn")
+                            SettingRowView(name: "Compatability", content: "iOS 14")
+                            SettingRowView(name: "Website", linkLabel: "Personal Site", linkDestination: "vatanachhorn.tech")
+                            SettingRowView(name: "Instagram", linkLabel: "@vatana.chhorn", linkDestination: "www.instagram.com/vatana.chhorn")
+                            SettingRowView(name: "SwiftUI", content: "2.0")
+                            SettingRowView(name: "Version", content: "1.0.0")
+                    }
+                    
+                    
                 }  //: Vstack
                 .navigationBarTitle(Text("Setting"), displayMode:  .large)
                 .navigationBarItems(trailing:
