@@ -37,7 +37,8 @@ struct ContentView: View {
                 .sheet(isPresented: $isShowingSetting, content: {
                     SettingSheet()
                 })
-    }                 //: NavigationView
+        } .navigationViewStyle(StackNavigationViewStyle())
+        //: NavigationView
 }
 
     // MARK: - PREVIEW
