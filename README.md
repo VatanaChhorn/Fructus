@@ -1,4 +1,4 @@
-# Fructus
+# 🍏 Fructus
 
 ### Picture of the app 
 
